@@ -1,0 +1,6 @@
+# Ignore all files in the  subfolder.
+/upgrade/
+/plugins/
+/backups-dup-lite/
+/uploads/
+
