@@ -5,45 +5,45 @@
  */
 
 
- $lexique = array(
+ $definitions = array(
     array(
         'titre' => 'Abattant',
-        'definition' => 'Châssis de fenêtre s’ouvrant horizontalement.'
+        'description' => 'Châssis de fenêtre s’ouvrant horizontalement.'
     ),
     array(
         'titre' => 'Apprêt',
-        'definition' => 'Couche de peinture ou de papier peint posé sur un mur pour en améliorer l’aspect final.'
+        'description' => 'Couche de peinture ou de papier peint posé sur un mur pour en améliorer l’aspect final.'
     ),
     array(
         'titre' => 'Béton',
-        'definition' => 'Agrégat de sable, de ciment et d’eau. Armé, il est coulé sur armature métallique. Cellulaire, il
+        'description' => 'Agrégat de sable, de ciment et d’eau. Armé, il est coulé sur armature métallique. Cellulaire, il
         comporte des milliers de bulles qui lui confèrent une très bonne isolation et solidité.
 '
     ),
     array(
         'titre' => 'Chaume',
-        'definition' => 'Matériau de couverture fait de paille de seigle, de roseau, etc.'
+        'description' => 'Matériau de couverture fait de paille de seigle, de roseau, etc.'
     ),
     array(
         'titre' => 'Drain',
-        'definition' => 'Dispositif enterré destiné à capter les eaux souterraines.'
+        'description' => 'Dispositif enterré destiné à capter les eaux souterraines.'
     ),
     array(
         'titre' => 'Entrait',
-        'definition' => 'Pièce de charpente horizontale joignant les arbalétriers.'
+        'description' => 'Pièce de charpente horizontale joignant les arbalétriers.'
     ),
     array(
         'titre' => 'Greffer',
-        'definition' => 'Remplacer la partie endommagée d’une pièce de bois par un matériau sain.'
+        'description' => 'Remplacer la partie endommagée d’une pièce de bois par un matériau sain.'
     ),
     array(
         'titre' => 'Lambourde',
-        'definition' => 'Poutre fixée le long d’un mur pour recevoir des solives sur lesquelles sont clouées les lames d’un
+        'description' => 'Poutre fixée le long d’un mur pour recevoir des solives sur lesquelles sont clouées les lames d’un
         parquet.'
     ),
     array(
         'titre' => 'Mortaise',
-        'definition' => 'Entaille faite dans une pièce de bois pour recevoir le tenon d’une autre pièce.'
+        'description' => 'Entaille faite dans une pièce de bois pour recevoir le tenon d’une autre pièce.'
     ),
 );
 
@@ -56,21 +56,10 @@ get_header();
     ?>
     <section>
         <?php
-        foreach ($lexique as $mot) {
-            ?>
-            <div class="mot">
-                <div class="titre">
-                    <?php echo $mot['titre']; ?>
-                    <div class="action">
-                        <div class="down">&#9660;</div>
-                        <div class="up">&#9650;</div>
-                    </div>
-                </div>
-                <div class="definition">
-                    <?php echo $mot['definition']; ?>
-                </div>
-            </div>
-        <?php } ?>
+            foreach ($definitions as $definition) {
+                get_template_part("template-parts/bloc-lexique", null, $definition);
+            }
+        ?>
     </section>
 
 </main><!-- #site-content -->
