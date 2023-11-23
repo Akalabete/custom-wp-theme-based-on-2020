@@ -1,0 +1,2 @@
+[23-Nov-2023 14:17:11 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\Utilisateur\Local Sites\bricotips\app\public\wp-content\plugins\bricotips-login\includes\class-bricotips-login.php on line 161
+[23-Nov-2023 14:41:41 UTC] PHP Warning:  Undefined property: Bricotips_Top_Contact_Public::$emai in C:\Users\Utilisateur\Local Sites\bricotips\app\public\wp-content\plugins\bricotips-top-contact\public\class-bricotips-top-contact-public.php on line 111
