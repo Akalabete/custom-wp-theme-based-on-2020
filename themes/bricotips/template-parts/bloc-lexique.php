@@ -6,7 +6,7 @@
             <div class="up">&#9650;</div>
         </div>
     </div>
-    <div class="definition">
+    <div class="definition">  
         <?= $args['description'] ?>
     </div>
 </div>

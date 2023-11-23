@@ -1,14 +1,13 @@
-
 <?php
 /**
  * Template Name: template lexique
  */
 
 
- $definitions = array(
+$definitions = array(
     array(
-        'titre' => 'Abattant',
-        'description' => 'Châssis de fenêtre s’ouvrant horizontalement.'
+            'titre' => 'Abattant',
+            'description' => 'Châssis de fenêtre s’ouvrant horizontalement.'
     ),
     array(
         'titre' => 'Apprêt',
@@ -16,9 +15,7 @@
     ),
     array(
         'titre' => 'Béton',
-        'description' => 'Agrégat de sable, de ciment et d’eau. Armé, il est coulé sur armature métallique. Cellulaire, il
-        comporte des milliers de bulles qui lui confèrent une très bonne isolation et solidité.
-'
+        'description' => 'Agrégat de sable, de ciment et d’eau. Armé, il est coulé sur armature métallique. Cellulaire, il comporte des milliers de bulles qui lui confèrent une très bonne isolation et solidité.'
     ),
     array(
         'titre' => 'Chaume',
@@ -38,8 +35,7 @@
     ),
     array(
         'titre' => 'Lambourde',
-        'description' => 'Poutre fixée le long d’un mur pour recevoir des solives sur lesquelles sont clouées les lames d’un
-        parquet.'
+        'description' => 'Poutre fixée le long d’un mur pour recevoir des solives sur lesquelles sont clouées les lames d’un parquet.'
     ),
     array(
         'titre' => 'Mortaise',
@@ -50,16 +46,20 @@
 get_header();
 ?>
 
+
 <main id="lexique">
-    <?php
-        echo do_shortcode('[banniere-titre titre="Lexique du bricolage" src="http://bricotips.local/wp-content/uploads/2023/11/banniere-image.webp"]')
-    ?>
+
+    <h1>Lexique du bricolage</h1>
     <section>
-        <?php
-            foreach ($definitions as $definition) {
-                get_template_part("template-parts/bloc-lexique", null, $definition);
-            }
-        ?>
+        
+    <?php
+
+        foreach($definitions as $definition){
+            get_template_part("template-parts/bloc-lexique",null,$definition);
+        }
+
+    ?>
+
     </section>
 
 </main><!-- #site-content -->
@@ -81,9 +81,3 @@ get_header();
 
 <?php
 get_footer();
-
-
-
-
-
-
